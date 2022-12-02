@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
+    <ClCompile Include="C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\windows\flutter\ephemeral\cpp_client_wrapper\core_implementations.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
+    <ClCompile Include="C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\windows\flutter\ephemeral\cpp_client_wrapper\standard_codec.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc">
+    <ClCompile Include="C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\windows\flutter\ephemeral\cpp_client_wrapper\plugin_registrar.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\windows\flutter\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\windows\flutter\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{3E059CF2-DB3D-309E-8062-8E0F52935097}</UniqueIdentifier>
+      <UniqueIdentifier>{849D9AF5-FC53-3272-8942-CB213B3EBD4C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{D180C7A8-4756-391E-925F-EBA5D0835363}</UniqueIdentifier>
+      <UniqueIdentifier>{ADE22310-5CC9-3ED6-B302-3311F9CADEFF}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

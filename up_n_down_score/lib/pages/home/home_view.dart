@@ -34,7 +34,12 @@ class _StatefulWidget extends State<HomeView> with SingleTickerProviderStateMixi
     return BaseView<HomeModel>(
         onModelReady: (model) async {
           this.model = model;
-          model.buildGame(["Dima L", "Lena", "Dima S", "Julia"].toList());
+
+          Future.delayed(Duration(seconds: 2), () async {
+            if (model.game == null) {
+              newGameDialog();
+            }
+          });
         },
         builder: (context, model, child) => Scaffold(
               appBar: AppBar(
@@ -56,27 +61,41 @@ class _StatefulWidget extends State<HomeView> with SingleTickerProviderStateMixi
                 ],
               ),
               body: Container(
-                  padding: const EdgeInsets.all(0.0),
-                  child: Column(
-                    children: [
-                      // Text("Game", style: Theme.of(context).textTheme.headline6),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
-                          child: getTable("R", _scrollController1),
-                        ),
-                      ),
+                padding: const EdgeInsets.all(0.0),
+                child: (model.game != null)
+                    ? Column(
+                        children: [
+                          // Text("Game", style: Theme.of(context).textTheme.headline6),
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 0),
+                              child: getTable("R", _scrollController1),
+                            ),
+                          ),
 
-                      SizedBox(
-                        height: 60,
-                        child: Padding(
-                          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 00),
-                          child: getTable("T", null),
-                        ),
+                          SizedBox(
+                            height: 60,
+                            child: Padding(
+                              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 00),
+                              child: getTable("T", null),
+                            ),
+                          ),
+                          getKeyboard()
+                        ],
+                      )
+                    : Column(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [Text("Click New Game to start.", style: Theme.of(context).textTheme.headline4)],
+                          )
+                          // Text("Game", style: Theme.of(context).textTheme.headline6),
+                        ],
                       ),
-                      getKeyboard()
-                    ],
-                  )),
+              ),
             ));
   }
 
@@ -345,7 +364,7 @@ class _StatefulWidget extends State<HomeView> with SingleTickerProviderStateMixi
                                       duration: const Duration(milliseconds: 100), curve: Curves.ease);
                                 });
                               },
-                              child: Text((model.game!.currentRoundState == 1) ? "End Round" : "Takes"))),
+                              child: Text((model.game!.currentRoundState == 1) ? "Next Round" : "Takes"))),
                     ],
                   )
                 ],
@@ -418,6 +437,10 @@ class _StatefulWidget extends State<HomeView> with SingleTickerProviderStateMixi
     if (guess != null && takes != null) {
       if (guess == takes) {
         score = takes * 50 + 50;
+
+        if (model.game!.rounds[model.game!.currentRoundNo].roundCards == 1) {
+          score = score * 3;
+        }
       } else {
         score = takes * 10;
       }
@@ -445,13 +468,20 @@ class _StatefulWidget extends State<HomeView> with SingleTickerProviderStateMixi
     showDialog(
         context: context,
         builder: (context) {
-          return NewGameDialog(onSubmit: (players) {
-            if (players.length > 1) {
-              setState(() {
-                model.buildGame(players);
+          List<String>? players;
+          if (model.game != null) {
+            players = model.game!.players.map((e) => e.name).toList();
+          }
+
+          return NewGameDialog(
+              players: players,
+              onSubmit: (players) {
+                if (players.length > 1) {
+                  setState(() {
+                    model.buildGame(players);
+                  });
+                }
               });
-            }
-          });
         });
   }
 }

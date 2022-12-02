@@ -18,7 +18,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{AA31C78E-4EB9-34A3-A448-4A3162AA146D}</ProjectGuid>
+    <ProjectGuid>{ECFCB499-4640-3510-9B61-9D1710F883D0}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -100,7 +100,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\CMakeFiles\e2351160a2d595563f582abaf62b5cdf\INSTALL_force.rule">
+    <CustomBuild Include="C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\CMakeFiles\e9a3440997b2b71ce5f19274cc335333\INSTALL_force.rule">
       <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"> </Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
 cd .
@@ -112,7 +112,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\runner\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\runner\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Profile|x64'"> </Message>
@@ -126,7 +126,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\runner\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\runner\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Profile|x64'">false</VerifyInputsAndOutputsExist>
       <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'"> </Message>
@@ -140,20 +140,20 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\runner\CMakeFiles\INSTALL_force</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\runner\CMakeFiles\INSTALL_force</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
       <VerifyInputsAndOutputsExist Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</VerifyInputsAndOutputsExist>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\ZERO_CHECK.vcxproj">
-      <Project>{A42B6E8D-9F25-36DA-9111-BD046D69FD8D}</Project>
+    <ProjectReference Include="C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\ZERO_CHECK.vcxproj">
+      <Project>{4A9B5502-3258-38D3-ACCA-20047CE7F922}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\runner\ALL_BUILD.vcxproj">
-      <Project>{9D4BC7AD-78AC-31BC-B6CC-1606AE1E6CFD}</Project>
+    <ProjectReference Include="C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\runner\ALL_BUILD.vcxproj">
+      <Project>{786BA698-178B-3929-AF9B-979F449030EC}</Project>
       <Name>ALL_BUILD</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

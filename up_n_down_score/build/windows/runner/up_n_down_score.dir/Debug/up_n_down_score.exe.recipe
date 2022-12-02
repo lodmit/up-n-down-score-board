@@ -2,13 +2,13 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\x64\Debug\ZERO_CHECK</FullPath>
+      <FullPath>C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\x64\Debug\ZERO_CHECK</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\flutter\x64\Debug\flutter_assemble</FullPath>
+      <FullPath>C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\flutter\x64\Debug\flutter_assemble</FullPath>
     </ProjectOutput>
     <ProjectOutput>
-      <FullPath>C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\runner\Debug\up_n_down_score.exe</FullPath>
+      <FullPath>C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\runner\Debug\up_n_down_score.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,6 +1,6 @@
-^C:\USERS\LODMIT\SOURCE\REPOS\UPNDOWNSCORE\UP_N_DOWN_SCORE\BUILD\WINDOWS\CMAKEFILES\4B2E824A4C5ED0C5A2EE976BDD44987F\GENERATE.STAMP.RULE
+^C:\USERS\LODMIT\SOURCE\GITHUB\UP-N-DOWN-SCORE-BOARD\UP_N_DOWN_SCORE\BUILD\WINDOWS\CMAKEFILES\C95AB9D1B88A4977A18F7CD12B37C0F3\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/lodmit/source/repos/UpNDownScore/up_n_down_score/windows -BC:/Users/lodmit/source/repos/UpNDownScore/up_n_down_score/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/lodmit/source/repos/UpNDownScore/up_n_down_score/build/windows/up_n_down_score.sln
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/lodmit/source/github/up-n-down-score-board/up_n_down_score/windows -BC:/Users/lodmit/source/github/up-n-down-score-board/up_n_down_score/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/lodmit/source/github/up-n-down-score-board/up_n_down_score/build/windows/up_n_down_score.sln
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

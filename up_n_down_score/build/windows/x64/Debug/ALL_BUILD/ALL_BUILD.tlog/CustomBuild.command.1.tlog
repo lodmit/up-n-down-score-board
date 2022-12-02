@@ -1,6 +1,6 @@
-^C:\USERS\LODMIT\SOURCE\REPOS\UPNDOWNSCORE\UP_N_DOWN_SCORE\WINDOWS\CMAKELISTS.TXT
+^C:\USERS\LODMIT\SOURCE\GITHUB\UP-N-DOWN-SCORE-BOARD\UP_N_DOWN_SCORE\WINDOWS\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/lodmit/source/repos/UpNDownScore/up_n_down_score/windows -BC:/Users/lodmit/source/repos/UpNDownScore/up_n_down_score/build/windows --check-stamp-file C:/Users/lodmit/source/repos/UpNDownScore/up_n_down_score/build/windows/CMakeFiles/generate.stamp
+"C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/lodmit/source/github/up-n-down-score-board/up_n_down_score/windows -BC:/Users/lodmit/source/github/up-n-down-score-board/up_n_down_score/build/windows --check-stamp-file C:/Users/lodmit/source/github/up-n-down-score-board/up_n_down_score/build/windows/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

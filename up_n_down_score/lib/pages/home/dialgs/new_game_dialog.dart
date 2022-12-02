@@ -3,23 +3,38 @@ import 'package:up_n_down_score/models/new_game.dart';
 
 class NewGameDialog extends StatefulWidget {
   final Function(List<String>) onSubmit;
-  const NewGameDialog({required this.onSubmit, super.key});
+  final List<String>? players;
+  const NewGameDialog({required this.onSubmit, super.key, this.players});
 
   @override
   _widgetState createState() => _widgetState();
 }
 
 class _widgetState extends State<NewGameDialog> {
-  TextEditingController _playerController1 = TextEditingController();
-  TextEditingController _playerController2 = TextEditingController();
-  TextEditingController _playerController3 = TextEditingController();
-  TextEditingController _playerController4 = TextEditingController();
-  TextEditingController _playerController5 = TextEditingController();
-  TextEditingController _playerController6 = TextEditingController();
+  List<TextEditingController> playerControllers = [
+    TextEditingController(),
+    TextEditingController(),
+    TextEditingController(),
+    TextEditingController(),
+    TextEditingController(),
+    TextEditingController(),
+  ];
 
   @override
   void initState() {
     super.initState();
+
+    int index = 0;
+    if (widget.players != null) {
+      for (var p in widget.players!) {
+        if (index < 6) {
+          playerControllers[index].text = p;
+        } else {
+          break;
+        }
+        index++;
+      }
+    }
   }
 
   @override
@@ -37,12 +52,12 @@ class _widgetState extends State<NewGameDialog> {
               Expanded(
                 child: Column(
                   children: [
-                    getTextBox("Player 1", _playerController1, autofocus: true),
-                    getTextBox("Player 2", _playerController2),
-                    getTextBox("Player 3", _playerController3),
-                    getTextBox("Player 4", _playerController4),
-                    getTextBox("Player 5", _playerController5),
-                    getTextBox("Player 6", _playerController6),
+                    getTextBox("Player 1", playerControllers[0], autofocus: true),
+                    getTextBox("Player 2", playerControllers[1]),
+                    getTextBox("Player 3", playerControllers[2]),
+                    getTextBox("Player 4", playerControllers[3]),
+                    getTextBox("Player 5", playerControllers[4]),
+                    getTextBox("Player 6", playerControllers[5]),
                   ],
                 ),
               ),
@@ -62,23 +77,11 @@ class _widgetState extends State<NewGameDialog> {
                           child: const Text("Play"),
                           onPressed: () {
                             List<String> players = [];
-                            if (_playerController1.text.isNotEmpty) {
-                              players.add(_playerController1.text);
-                            }
-                            if (_playerController2.text.isNotEmpty) {
-                              players.add(_playerController2.text);
-                            }
-                            if (_playerController3.text.isNotEmpty) {
-                              players.add(_playerController3.text);
-                            }
-                            if (_playerController4.text.isNotEmpty) {
-                              players.add(_playerController4.text);
-                            }
-                            if (_playerController5.text.isNotEmpty) {
-                              players.add(_playerController5.text);
-                            }
-                            if (_playerController6.text.isNotEmpty) {
-                              players.add(_playerController6.text);
+
+                            for (var pc in playerControllers) {
+                              if (pc.text.isNotEmpty) {
+                                players.add(pc.text);
+                              }
                             }
 
                             widget.onSubmit(players);

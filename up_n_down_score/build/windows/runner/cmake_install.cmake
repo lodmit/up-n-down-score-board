@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/lodmit/source/repos/UpNDownScore/up_n_down_score/windows/runner
+# Install script for directory: C:/Users/lodmit/source/github/up-n-down-score-board/up_n_down_score/windows/runner
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\CMakeFiles\e2351160a2d595563f582abaf62b5cdf\INSTALL_force.rule">
+    <CustomBuild Include="C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\CMakeFiles\e9a3440997b2b71ce5f19274cc335333\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{3E059CF2-DB3D-309E-8062-8E0F52935097}</UniqueIdentifier>
+      <UniqueIdentifier>{849D9AF5-FC53-3272-8942-CB213B3EBD4C}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

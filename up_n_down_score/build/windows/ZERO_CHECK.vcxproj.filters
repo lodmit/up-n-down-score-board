@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\lodmit\source\repos\UpNDownScore\up_n_down_score\build\windows\CMakeFiles\4b2e824a4c5ed0c5a2ee976bdd44987f\generate.stamp.rule">
+    <CustomBuild Include="C:\Users\lodmit\source\github\up-n-down-score-board\up_n_down_score\build\windows\CMakeFiles\c95ab9d1b88a4977a18f7cd12b37c0f3\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{3E059CF2-DB3D-309E-8062-8E0F52935097}</UniqueIdentifier>
+      <UniqueIdentifier>{849D9AF5-FC53-3272-8942-CB213B3EBD4C}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
