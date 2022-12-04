@@ -1,0 +1,4 @@
+#Sat Dec 03 21:58:59 EST 2022
+base.0=C\:\\Users\\lodmit\\source\\github\\up-n-down-score-board\\up_n_down_score\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+renamed.0=classes.dex
+path.0=classes.dex

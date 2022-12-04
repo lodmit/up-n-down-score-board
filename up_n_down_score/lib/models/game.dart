@@ -25,6 +25,17 @@ class Game {
     //     .map((e) => GameRound(id: gameCardsCount.indexOf(e), roundCarts: e, playerRounds: players.map((p) => PlayerRound()).toList()))
     //     .toList();
 
+    List<int> gameCardsCount = [1, 2, 3, 4, 5];
+    for (var p in players) {
+      gameCardsCount.add(6);
+    }
+    gameCardsCount
+      ..add(5)
+      ..add(4)
+      ..add(3)
+      ..add(2)
+      ..add(1);
+
     for (int i = 0; i < gameCardsCount.length; i++) {
       rounds.add(GameRound(
           roundType: "R", roundNo: i, roundCards: gameCardsCount[i], playerRounds: this.players.map((p) => PlayerRound(p.playerNo)).toList()));
