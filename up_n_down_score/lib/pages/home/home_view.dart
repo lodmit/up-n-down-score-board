@@ -116,20 +116,18 @@ class _StatefulWidget extends State<HomeView> with SingleTickerProviderStateMixi
     return DataTable2(
       columnSpacing: 2,
       horizontalMargin: 2,
-      minWidth: 100,
+      minWidth: 400,
       scrollController: scrollController,
-      headingRowHeight: roundType == "R" ? 50 : 0,
+      headingRowHeight: roundType == "R" ? (model.fontSize * 2) : 0,
       dividerThickness: roundType == "R" ? 0 : null,
       dataRowHeight: model.fontSize * 2.1,
       columns: model.game!.players
           .map((e) => DataColumn(
                 label: roundType == "R"
                     ? Container(
+                        alignment: Alignment.center,
                         padding: EdgeInsets.symmetric(horizontal: 12, vertical: model.fontSize * 0.15),
-                        child: Text(e.name,
-                            style: TextStyle(
-                              fontSize: model.fontSize,
-                            )),
+                        child: Text(e.name, style: TextStyle(fontSize: model.fontSize, color: Colors.blue.shade800)),
                       )
                     : Container(),
               ))
